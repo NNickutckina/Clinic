@@ -1,0 +1,36 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/f:Program.cs" caret="0" fromTop="0" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Entity.cs" caret="15" fromTop="1" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:Repositories/f:IRepository.cs" caret="35" fromTop="2" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:Repositories/f:MemoryRepository.cs" caret="333" fromTop="12" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Insurance.cs" caret="144" fromTop="7" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Doctor.cs" caret="0" fromTop="0" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Service.cs" caret="481" fromTop="19" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Policy.cs" caret="33" fromTop="0" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:ServiceType.cs" caret="375" fromTop="16" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Patient.cs" caret="0" fromTop="0" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:VisitStatus.cs" caret="106" fromTop="5" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Visit.cs" caret="398" fromTop="14" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/d:Actions/f:ViewServiceTypesAction.cs" caret="0" fromTop="0" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/d:Actions/f:ViewPatientsAction.cs" caret="235" fromTop="9" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/d:Actions/f:ViewVisitAction.cs" caret="938" fromTop="21" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/d:Actions/f:AddServiceAction.cs" caret="1336" fromTop="9" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/f:ConsoleUI.cs" caret="1217" fromTop="15" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:Services/f:DataGenerator.cs" caret="0" fromTop="0" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:VisitStatus.cs" caret="144" fromTop="13" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Entity.cs" caret="15" fromTop="1" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:Repositories/f:IRepository.cs" caret="35" fromTop="2" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:Repositories/f:MemoryRepository.cs" caret="260" fromTop="9" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Doctor.cs" caret="0" fromTop="0" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Insurance.cs" caret="144" fromTop="7" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Patient.cs" caret="61" fromTop="3" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Policy.cs" caret="421" fromTop="13" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Service.cs" caret="259" fromTop="10" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:ServiceType.cs" caret="65" fromTop="3" />
+    <File id="01827B7A-4A63-447B-84D1-375C607E0492/d:DomainModel/f:Visit.cs" caret="1599" fromTop="36" />
+    <File id="976AAE26-769D-476A-A152-ED5ADB818D60/f:ConsoleUI.cs" caret="1217" fromTop="15" />
+  </RecentEdits>
+</RecentFiles>
