@@ -111,6 +111,18 @@ namespace Library.Services
             _policyRepository.Add(policy4);
             _policyRepository.Add(policy5);
 
+            var service1 = new Service(38.5m, serviceType1);
+            var service2 = new Service(45m, serviceType2);
+            var service3 = new Service(40m, serviceType3);
+            var service4 = new Service(25m, serviceType4);
+            var service5 = new Service(12.5m, serviceType5);
+
+            _serviceRepository.Add(service1);
+            _serviceRepository.Add(service2);
+            _serviceRepository.Add(service3);
+            _serviceRepository.Add(service4);
+            _serviceRepository.Add(service5);
+
             var visit1 = new Visit(DateTime.Now, "", doctor1, policy1);
             var visit2 = new Visit(DateTime.Now, "", doctor2, policy2);
             var visit3 = new Visit(DateTime.Now, "", doctor3, policy3);

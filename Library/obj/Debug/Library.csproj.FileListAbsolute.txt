@@ -18,8 +18,3 @@ E:\9 семестр\ПРИС\lab1.2\Project1\Library\bin\Debug\Library.pdb
 E:\9 семестр\ПРИС\lab1.2\Project1\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
 E:\9 семестр\ПРИС\lab1.2\Project1\Library\obj\Debug\Library.dll
 E:\9 семестр\ПРИС\lab1.2\Project1\Library\obj\Debug\Library.pdb
-C:\Users\Андрей\Desktop\Project1\Library\bin\Debug\Library.dll
-C:\Users\Андрей\Desktop\Project1\Library\bin\Debug\Library.pdb
-C:\Users\Андрей\Desktop\Project1\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
-C:\Users\Андрей\Desktop\Project1\Library\obj\Debug\Library.dll
-C:\Users\Андрей\Desktop\Project1\Library\obj\Debug\Library.pdb
