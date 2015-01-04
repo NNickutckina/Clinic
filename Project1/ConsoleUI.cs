@@ -16,11 +16,10 @@ namespace Library
         public IRepository<Visit> _visitRepository = new MemoryRepository<Visit>();
         public IRepository<Insurance> _insuranceRepository = new MemoryRepository<Insurance>();
         public IRepository<Policy> _policyRepository = new MemoryRepository<Policy>();
-        public IRepository<Service> _serviceRepository = new MemoryRepository<Service>();
 
         public void Run()
         {
-            var dataGenerator = new DataGenerator(_patientRepository, _serviceTypeRepository, _doctorRepository, _visitRepository, _insuranceRepository, _policyRepository, _serviceRepository);
+            var dataGenerator = new DataGenerator(_patientRepository, _serviceTypeRepository, _doctorRepository, _visitRepository, _insuranceRepository, _policyRepository);
             dataGenerator.Generate();
 
             new MenuBuilder()
