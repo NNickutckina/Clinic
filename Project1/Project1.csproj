@@ -35,8 +35,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="Feonufry.CUI">
-      <HintPath>..\Feonufry.CUI.dll</HintPath>
+      <HintPath>..\packages\Feonufry.CUI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

@@ -13,7 +13,6 @@ namespace Library.Services
         private readonly IRepository<Visit> _visitRepository;
         private readonly IRepository<Insurance> _insuranceRepository;
         private readonly IRepository<Policy> _policyRepository;
-        private readonly IRepository<Service> _serviceRepository;
 
         public DataGenerator(IRepository<Patient> patientRepository, IRepository<ServiceType> serviceTypeRepository, IRepository<Doctor> doctorRepository, IRepository<Visit> visitRepository, IRepository<Insurance> insuranceRepository, IRepository<Policy> policyRepository)
         {
@@ -29,7 +28,7 @@ namespace Library.Services
         {
             var patient1 = new Patient("Ivanov Ivan");
             var patient2 = new Patient("Sidorov Arseniy");
-            var patient3 = new Patient("Markin Sergey");
+            var patient3 = new Patient("Markov Sergey");
             var patient4 = new Patient("Maksimov Fedor");
             var patient5 = new Patient("Amelichev Viktor");
 
