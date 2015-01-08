@@ -7,6 +7,7 @@ using ClinicLibrary.Services;
 using Castle.Windsor;
 using ClinicLibrary.IoC;
 using ClinicConsole.IoC;
+using ClinicLibrary.Context;
 
 namespace ClinicLibrary
 {

@@ -1,20 +1,21 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ClinicLibrary.DomainModel
 
 {
     public class Entity
     {
-        private readonly Guid _identifier;
-
         public Entity()
         {
-            _identifier = Guid.NewGuid();
+            Identifier = Guid.NewGuid();
         }
 
+        [Key]
         public Guid Identifier
         {
-            get { return _identifier; }
+            get;
+            private set;
         }
     }
 }

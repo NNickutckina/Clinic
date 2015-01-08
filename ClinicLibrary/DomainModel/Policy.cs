@@ -35,7 +35,7 @@ namespace ClinicLibrary.DomainModel
             get { return _insurance; }
         }
 
-        public List<ServiceType> ServiceList
+        public virtual List<ServiceType> ServiceList
         {
             get { return _serviceList; }
         }

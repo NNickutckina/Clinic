@@ -10,6 +10,10 @@ namespace ClinicLibrary.DomainModel
             _fullName = fullName;
         }
 
+        public Patient()
+        {
+        }
+
         public string Name
         {
             get { return _fullName; }

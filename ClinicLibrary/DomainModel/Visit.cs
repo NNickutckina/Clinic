@@ -56,7 +56,7 @@ namespace ClinicLibrary.DomainModel
             get { return _policy; }
         }
 
-        public IEnumerable<Service> Services
+        public virtual IEnumerable<Service> Services
         {
             get { return _services; }
         }
