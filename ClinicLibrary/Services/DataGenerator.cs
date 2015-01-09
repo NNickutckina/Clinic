@@ -98,7 +98,7 @@ namespace ClinicLibrary.Services
             thirdServiceList.Add(serviceType4);
 
             var policy1 = new Policy("hfr", "234-43", Alpha, firstServiceList, patient1);
-            var policy2 = new Policy("zdtj", "235", Rosno, firstServiceList, patient2);
+            var policy2 = new Policy("zdtj", "235", Rosno, secondServiceList, patient2);
             var policy3 = new Policy("zetj", "732", Alpha, thirdServiceList, patient3);
             var policy4 = new Policy("qwet", "3468", Rosno, firstServiceList, patient4);
             var policy5 = new Policy("mfsj", "892", RosGosStrah, secondServiceList, patient5);

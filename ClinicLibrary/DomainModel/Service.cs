@@ -3,30 +3,23 @@ namespace ClinicLibrary.DomainModel
 {
     public class Service : Entity
     {
-        private decimal _duration;
-        private decimal _cost;
-        private ServiceType _serviceType;
+        public Service()
+        {
+
+        }
 
         public Service (decimal duration, ServiceType serviceType)
         {
-            _duration = duration;
-            _cost = serviceType.Cost;
-            _serviceType = serviceType;
+            Duration = duration;
+
+            Cost = serviceType.Cost;
+            ServiceType = serviceType;
         }
 
-        public decimal Duration
-        {
-            get { return _duration; }
-        }
+        public decimal Duration { get; set; }
 
-        public decimal Cost
-        {
-            get { return _cost; }
-        }
+        public decimal Cost { get; set; }
 
-        public ServiceType ServiceType
-        {
-            get { return _serviceType; }
-        }
+        public virtual ServiceType ServiceType { get; set; }
     }
 }

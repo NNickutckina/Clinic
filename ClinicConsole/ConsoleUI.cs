@@ -13,14 +13,13 @@ namespace ClinicLibrary
 {
     public class ConsoleUI
     {
-
         public void Run()
         {
             var container = new WindsorContainer();
             container.Install(new CoreInstaller(), new UIInstaller());
 
-            var dataGenerator = container.Resolve<DataGenerator>();
-            dataGenerator.Generate();
+            //var dataGenerator = container.Resolve<DataGenerator>();
+            //dataGenerator.Generate();
 
             new MenuBuilder()
                 .WithActionFactory(new WindsorActionFactory(container))
@@ -30,6 +29,7 @@ namespace ClinicLibrary
                 .Item<ViewServiceTypesAction>("View service types")
                 .Item<ViewVisitsAction>("View visits")
                 .Item<AddServiceAction>("Add service")
+                .Item<SaveChangesAction>("Save changes")
                 .Exit("Exit")
                 .GetMenu().Run();
         }

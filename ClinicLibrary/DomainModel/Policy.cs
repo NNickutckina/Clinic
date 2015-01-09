@@ -4,45 +4,48 @@ namespace ClinicLibrary.DomainModel
 {
     public class Policy : Entity
     {
-        private string _series;
-        private string _number;
-        private Insurance _insurance;
-        private List<ServiceType> _serviceList;
-        private Patient _patient;
+        public Policy()
+        {
+        }
 
         public Policy(string series, string number, Insurance insurance, 
             List<ServiceType> serviceList, Patient patient)
         {
-            _series = series;
-            _number = number;
-            _insurance = insurance;
-            _serviceList = serviceList;
-            _patient = patient;
+            Series = series;
+            Number = number;
+            Insurance = insurance;
+            ServiceList = new List<ServiceType>(serviceList);
+            Patient = patient;
         }
 
         public string Series
         {
-            get { return _series; }
+            get;
+            set;
         }
 
         public string Number
         {
-            get { return _number; }
+            get;
+            set;
         }
 
-        public Insurance Insurance
+        public virtual Insurance Insurance
         {
-            get { return _insurance; }
+            get;
+            set;
         }
 
         public virtual List<ServiceType> ServiceList
         {
-            get { return _serviceList; }
+            get;
+            set;
         }
 
-        public Patient Patient
+        public virtual Patient Patient
         {
-            get { return _patient; }
+            get;
+            set;
         }
     }
 }

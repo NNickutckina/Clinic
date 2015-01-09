@@ -3,17 +3,19 @@ namespace ClinicLibrary.DomainModel
 {
     public class Insurance: Entity
     {
-        private string _companyName;
+        public Insurance()
+        {
+        }
 
         public Insurance(string companyName)
         {
-            _companyName = companyName;
+            CompanyName = companyName;
         }
 
         public string CompanyName
         {
-            get { return _companyName; }
-            set { _companyName = value; }
+            get;
+            set;
         }
     }
 }

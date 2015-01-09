@@ -3,17 +3,19 @@ namespace ClinicLibrary.DomainModel
 {
     public class Doctor : Entity
     {
-        private string _fullName;
+        public Doctor()
+        {
+        }
 
         public Doctor(string fullName)
         {
-            _fullName = fullName;
+            Name = fullName;
         }
 
         public string Name
         {
-            get { return _fullName; }
-            set { _fullName = value; }
+            get;
+            set;
         }
     }
 }

@@ -2,31 +2,45 @@
 using System.Collections.Generic;
 using System.Linq;
 using ClinicLibrary.DomainModel;
+using ClinicLibrary.Context;
+using System.Data.Entity;
 
 namespace ClinicLibrary.Repositories
 {
     public class MemoryRepository<T> : IRepository<T> where T : Entity
     {
-        private Dictionary<Guid, T> _dictionay = new Dictionary<Guid, T>();
+        private ClinicContext _context;
+
+        public MemoryRepository(ClinicContext context)
+        {
+            _context = context;
+        }
+
+        public DbSet<T> Values
+        {
+            get { return _context.Set<T>(); }
+        }
 
         public T Get(Guid id)
         {
-            return _dictionay[id];
+            return Values.Find(id);
         }
-        
+
         public void Add(T entity)
         {
-            _dictionay.Add(entity.Identifier, entity);
+            Values.Add(entity);
+            _context.SaveChanges();
         }
 
         public void Delete(T entity)
         {
-            _dictionay.Remove(entity.Identifier);
+            Values.Remove(entity);
+            _context.SaveChanges();
         }
 
         public IQueryable<T> AsQueryable()
         {
-            return _dictionay.Values.AsQueryable();
+            return Values.AsQueryable();
         }
     }
 }
