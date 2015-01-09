@@ -67,6 +67,7 @@
     <Compile Include="Repositories\MemoryRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="DomainModel\VisitStatus.cs" />
+    <Compile Include="Services\CostService.cs" />
     <Compile Include="Services\DataGenerator.cs" />
   </ItemGroup>
   <ItemGroup>

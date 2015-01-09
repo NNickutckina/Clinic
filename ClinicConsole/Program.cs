@@ -10,6 +10,8 @@ namespace ClinicLibrary
     {
         public static void Main()
         {
+            string path = System.IO.Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(path, "Databases"));
             new ConsoleUI().Run();
         }
     }

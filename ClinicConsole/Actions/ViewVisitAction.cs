@@ -2,6 +2,8 @@
 using Feonufry.CUI.Actions;
 using ClinicLibrary.Repositories;
 using ClinicLibrary.DomainModel;
+using ClinicLibrary.Services;
+using System.Linq;
 
 namespace ClinicLibrary.Actions
 {
@@ -19,17 +21,12 @@ namespace ClinicLibrary.Actions
             Console.Clear();
             Console.WriteLine("Visits:\n");
 
-            foreach (var visit in _visitRepository.AsQueryable())
+            var visits = _visitRepository.AsQueryable().ToList();
+
+            foreach (var visit in visits)
             {
                 Console.WriteLine("Doctor: {2} Policy: {3} Time: {0} {1}", visit.DateTime, visit.Description, visit.Doctor.Name, visit.Policy.Patient.Name);
-                var services = visit.Services;
-                decimal totalCost = 0m;
-                foreach (var service in services)
-                {
-                    totalCost += service.Cost;
-                    Console.WriteLine("Service {0} cost: {1}", service.ServiceType.Name, service.Cost);
-                }
-                Console.WriteLine("Service total cost: {0}", totalCost);
+                Console.WriteLine("Service total cost: {0}", CostService.GetVisitCost(visit));
             }
         }
     }

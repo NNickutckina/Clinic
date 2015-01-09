@@ -12,6 +12,7 @@ namespace ClinicLibrary.Context
     public class ClinicContext: DbContext
     {
         public ClinicContext()
+            : base("Clinic") 
         {
             Database.SetInitializer<ClinicContext>(new CreateDatabaseIfNotExists<ClinicContext>());
             //Database.SetInitializer<ClinicContext>(new DropCreateDatabaseIfModelChanges<ClinicContext>());

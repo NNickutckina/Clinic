@@ -15,7 +15,7 @@ namespace ClinicLibrary.DomainModel
         public Guid Identifier
         {
             get;
-            private set;
+            set;
         }
     }
 }
